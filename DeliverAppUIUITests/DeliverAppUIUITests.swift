@@ -2,7 +2,7 @@
 //  DeliverAppUIUITests.swift
 //  DeliverAppUIUITests
 //
-//  Created by Pedro Kanagusto on 05/10/21.
+//  Created by PedroJSMK on 05/10/21.
 //
 
 import XCTest

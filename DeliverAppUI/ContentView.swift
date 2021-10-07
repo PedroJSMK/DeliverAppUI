@@ -2,20 +2,32 @@
 //  ContentView.swift
 //  DeliverAppUI
 //
-//  Created by Pedro Kanagusto on 05/10/21.
+//  Created by PedroJSMK on 05/10/21.
 //
 
 import SwiftUI
+import Firebase
 
-struct ContentView: View {
-    var body: some View {
-        Text("Hello, world!")
-            .padding()
+@main
+struct DeliveryApp: App {
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
+    
+    var body: some Scene {
+        WindowGroup {
+            
+            Home()
+        }
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
+ 
+
+
+class AppDelegate: NSObject, UIApplicationDelegate {
+    
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+        
+        FirebaseApp.configure()
+        return true
     }
 }
