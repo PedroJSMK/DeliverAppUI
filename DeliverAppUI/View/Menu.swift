@@ -33,7 +33,7 @@ struct Menu: View {
             HStack {
                 Spacer()
                 
-                Text("Versao 1.0")
+                Text("Versao 1.1")
                     .fontWeight(.bold)
                     .foregroundColor(Color(.blue))
             }
